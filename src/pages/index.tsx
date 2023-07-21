@@ -19,14 +19,14 @@ const Home: React.FC = () => {
   return (
     <>
       <Intro></Intro>
-      
+
       <Sale></Sale>
-      
+
       <section className="container mx-auto py-8 flex justify-center items-center flex-col">
         <h1 className="text-4xl font-semibold mb-4 text-black">PRODUCTS</h1>
         <ProductList products={products} />
       </section>
-
+      
       <BackToTopButton />
     </>
   );

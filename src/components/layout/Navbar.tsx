@@ -6,8 +6,8 @@ const Navbar: React.FC = () => {
     <nav className="bg-slate-50 text-black p-4">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <Link href="/"  className="text-xl font-bold">
-           Online Store
+          <Link href="/"  className="text-xl text-red-600 font-bold">
+           OnlineStore
           </Link>
           <div className="flex items-center space-x-4">
             <Link href="/" className="px-2 py-1 rounded hover:bg-gray-200">

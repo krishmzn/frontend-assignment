@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { Product } from "../types";
 
+// import styles from '../styles/custom.modules.css'
+
 interface ProductCardProps {
   product: Product;
 }
@@ -20,9 +22,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <Link
       href={`/product/${product.id}`}
       passHref
-      className="bg-white cursor-pointer text-black rounded-xl border border-gray-100 shadow hover:shadow-2xl"
+      className="bg-white cursor-pointer text-black rounded-xl border border-gray-100 shadow hover:shadow-2xl transition-transform hover:scale-105"
     >
-      <div className="body-font p-4 text-grey">
+      <div className="body-font p-4 text-grey transition-transform">
         <div className="container px-5 py-5 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/4 md:w-1/2 min-w-full flex items-start justify-center flex-col border-slate-950">

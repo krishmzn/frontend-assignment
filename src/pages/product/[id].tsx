@@ -24,7 +24,7 @@ const ProductDetails: React.FC = () => {
 
   return (
     <section className="text-gray-600 body-font overflow-hidden">
-      <div className="container px-5 py-10 mx-auto">
+      <div className="container mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap items-center">
           <img
             className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded transition-transform hover:scale-110"

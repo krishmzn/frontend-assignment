@@ -32,7 +32,7 @@ export default function Sale() {
 
     return(
         <>
-            <div className="bg-red-700 flex flex-col gap-3 justify-center sm:flex-row sm:justify-around lg:py-14 pl-8 py-9 z-10 ">
+            <div className="bg-red-700 flex flex-col gap-3 justify-center items-center sm:flex-row sm:justify-around lg:py-14 pl-8 py-9 z-10 ">
                 <h2 className="text-4xl lg:text-5xl tracking-widest"><strong>SALE STARTS IN</strong></h2>
                 <h2 className="text-4xl lg:text-5xl tracking-widest"><strong>{hours}</strong> <span className="text-lg">Hour</span></h2>
                 <h2 className="text-4xl lg:text-5xl tracking-widest"><strong>{minutes}</strong> <span className="text-lg">Minutes</span></h2>

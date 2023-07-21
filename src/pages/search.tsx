@@ -100,7 +100,7 @@ const Search: React.FC = () => {
               <Link
                 href={`/product/${product.id}`}
                 passHref
-                className="bg-white cursor-pointer text-black rounded-xl border border-gray-100 shadow hover:shadow-2xl"
+                className="bg-white cursor-pointer text-black rounded-xl border border-gray-100 shadow hover:shadow-2xl transition-transform hover:scale-105"
               >
                 <div className="body-font p-4 text-grey">
                   <div className="container px-5 py-5 mx-auto">

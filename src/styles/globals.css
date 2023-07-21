@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  letter-spacing: 0.05rem;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+  background: #fff;
+
+  font-family: "Poppins", sans-serif;
+
+  /* background-color: #ffffff;
+    background-image: radial-gradient(rgba(72, 107, 180, .5 ) 0.5px, #ffffff 0.5px);
+    background-size: 10px 10px; */
+}
+
+/* html {
+  background-color: #ffffff;
+    background-image: radial-gradient(rgba(72, 107, 180, .5 ) 0.5px, #ffffff 0.5px);
+    background-size: 10px 10px;
+} */
+
+section {
+  padding: 0 2.5rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 1080px) {
+  section{
+    margin-top: 2rem;
+  }
+}

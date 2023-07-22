@@ -1,6 +1,6 @@
 # Online Store
 
-This is a simple React Online Store that fetches products from the Fake Store API and allows users to search and explore products.
+This is a simple NextJS Online Store that fetches products from the Fake Store API and allows users to search and explore products.
 
 
 ## Features

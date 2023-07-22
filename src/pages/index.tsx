@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       <Sale></Sale>
 
       <section className="container mx-auto py-8 flex justify-center items-center flex-col text-slate-700">
-        <h1 className="text-xl font-extrabold sm:text-5xl mb-4 text-black indent-2">EXPLORE PRODUCTS</h1>
+        <h1 className="text-xl font-extrabold sm:text-5xl mb-4 text-slate-800 indent-2">EXPLORE PRODUCTS</h1>
         <ProductList products={products} />
       </section>
       

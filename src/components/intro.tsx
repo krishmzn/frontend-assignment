@@ -22,7 +22,7 @@ export default function Intro() {
             Your perfect pack for everyday use and walks in the forest. Stash your laptop
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-center">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-center px-4">
               <a
                 href="/search"
                 className="block w-full rounded bg-orange-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-orange-700 focus:outline-none focus:ring active:bg-orange-500 sm:w-auto"

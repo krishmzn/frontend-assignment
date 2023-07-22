@@ -21,3 +21,9 @@ This is a simple React Online Store that fetches products from the Fake Store AP
 - Fake Store API
 
 ## Visit live demo: url['https://online-store-krish.vercel.app/']
+
+## or you can watch a video demo
+
+
+https://github.com/krishmzn/online-store/assets/99157652/c95a168a-190d-44b6-9f4e-cce24089cd5e
+

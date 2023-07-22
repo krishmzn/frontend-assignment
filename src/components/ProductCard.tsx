@@ -9,6 +9,7 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  console.log('product',product)
   const truncateTitle = (title: string, maxWords: number) => {
     const words = title.split(" ");
     if (words.length <= maxWords) {
@@ -43,7 +44,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                   {product.category}
                 </h3>
 
-                <h2 className="text-gray-900 title-font text-lg font-medium">
+                <h2 className="text-gray-900 title-font text-base font-medium">
                   {truncateTitle(product.title, 4)}
                 </h2>
 

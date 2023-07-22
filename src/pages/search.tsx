@@ -17,6 +17,7 @@ const Search: React.FC = () => {
         .then((response) => {
           setAllProducts(response.data);
         });
+        console.log('allProducts', allProducts)
     } catch {
       console.error("Error fetching products");
     }
@@ -26,6 +27,15 @@ const Search: React.FC = () => {
     setFilteredProducts(allProducts);
     console.log(filteredProducts);
   }, [allProducts]);
+
+  const truncateTitle = (title: string, maxWords: number) => {
+    const words = title.split(" ");
+    if (words.length <= maxWords) {
+      return title;
+    } else {
+      return words.slice(0, maxWords).join(" ") + " ...";
+    }
+  };
 
   const handleSearch = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -37,18 +47,20 @@ const Search: React.FC = () => {
     setFilteredProducts(filteredResults);
   };
 
-  const truncateTitle = (title: string, maxWords: number) => {
-    const words = title.split(" ");
-    if (words.length <= maxWords) {
-      return title;
-    } else {
-      return words.slice(0, maxWords).join(" ") + " ...";
-    }
-  };
+  const clearSearch = (event: React.FormEvent) => {
+    setSearchTerm("")
+    event.preventDefault();
+    // Filter products
+    const filteredResults = allProducts.filter((product) =>
+      product.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    setFilteredProducts(filteredResults);
+  }
 
   return (
     <div className="container mx-auto py-8">        
-      <form onSubmit={handleSearch} className="px-4 lg:px-10">
+      <form className="px-4 lg:px-10 min-w-full">
         <label
           htmlFor="default-search"
           className="mb-2 text-sm font-medium text-gray-900 sr-only "
@@ -76,17 +88,16 @@ const Search: React.FC = () => {
           <input
             id="default-search"
             className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
-            required
             type="text"
             placeholder="Search products"
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={(e) => {setSearchTerm(e.target.value); handleSearch(e);}}
           />
           <button
-            type="submit"
+            onClick={clearSearch}
             className="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            Search
+            Clear
           </button>
         </div>
       </form>

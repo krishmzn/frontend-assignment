@@ -25,5 +25,5 @@ This is a simple NextJS Online Store that fetches products from the Fake Store A
 ## or you can watch a video demo
 
 
-https://github.com/krishmzn/online-store/assets/99157652/c95a168a-190d-44b6-9f4e-cce24089cd5e
+[3.webm](https://github.com/krishmzn/online-store/assets/99157652/e9bb40fb-6195-4b5c-9c56-12726b1573cf)
 
